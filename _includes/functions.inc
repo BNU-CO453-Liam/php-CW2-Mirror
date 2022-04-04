@@ -57,4 +57,19 @@ function template( $file, $args=array() ){
    return ob_get_clean();
 }
 
+/**
+ * Returns hash of plain text password
+ */
+function get_hash_pswd($passwd) {
+
+	$url = 'http://';
+	$url .= $_SERVER['HTTP_HOST'] . '/';
+   $url .= basename(dirname(__DIR__, 1));
+   $url .= "/password_hash.php?password=$passwd";
+    
+	$pass_hash = file_get_contents("$url");
+
+	return $pass_hash;
+}
+
 ?>

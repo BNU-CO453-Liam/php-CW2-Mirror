@@ -25,8 +25,9 @@ if (isset($_SESSION['id'])) {
      $result = mysqli_query($conn, $sql);
 
      $data['content'] .= "<form name='frmassignmodule' action='' method='post' >";
-     $data['content'] .= "Select a module to assign<br/>";
-     $data['content'] .= "<select name='selmodule' >";
+     $data['content'] .= "<h2>Assign Module</h2><hr>";
+     $data['content'] .= "<select name='selmodule'>";
+     $data['content'] .= "<option value='' disabled selected>Select a module</option>";
      // Display the module name sin a drop down selection box
      while($row = mysqli_fetch_array($result)) {
         $data['content'] .= "<option value='$row[modulecode]'>$row[name]</option>";

@@ -1,0 +1,68 @@
+/** Page Layout **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  margin: 0;
+}
+
+form, #modules, #students {
+  position:relative;
+  min-width: 40vw;
+  width: fit-content;
+  font-weight: 200;
+  margin: 10vh auto 0vh auto;
+  padding: 15px;
+  display: grid;
+  box-shadow: 0px 4px 10px 2px #257;
+  border-radius: 2px;
+  color: #257;
+}
+
+#students {
+  position:absolute;
+  left:0;
+}
+
+#confirm {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: fit-content;
+  max-width: fit-content !important;
+  border:solid 2px red !important;
+  background-color: white !important;
+  z-index:1 !important;
+}
+
+#welcome {
+  color: #257;
+}
+
+hr {
+	width: 100%;
+}
+
+input {
+  display: inline-block;
+}
+
+input[type="date"] {
+  color: #7d7d7d;
+  font-weight: 200;
+}
+
+::placeholder {
+  color: #7d7d7d;
+  font-weight: 200;
+  opacity: 1;
+}
+
+.button {
+  margin: auto;
+  display:block;
+}

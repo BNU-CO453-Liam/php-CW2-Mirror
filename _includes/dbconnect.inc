@@ -1,10 +1,9 @@
 <?php
-	//  replace mysqllogin and mysqlpassword with your own
-	$conn = mysqli_connect("localhost", "demobnu", "ezznWX8jD2J5ySUE", "oss-cw2");
+	// Connect to database
+	$conn = new mysqli("localhost", "user2", "0000", "ua2");
 
-	if (mysqli_connect_errno()) {
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	if (!$conn) {
+		echo "Failed to connect to MySQL: " . $conn->error();
 		die();
 	}
-
 ?>

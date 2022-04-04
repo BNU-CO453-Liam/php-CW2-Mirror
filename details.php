@@ -40,8 +40,8 @@ if (isset($_SESSION['id'])) {
       // also http://stackoverflow.com/questions/8280360/formatting-an-array-value-inside-a-heredoc
       $data['content'] = <<<EOD
 
-   <h2>My Details</h2>
    <form name="frmdetails" action="" method="post">
+   <h2>My Details</h2><hr>
    First Name :
    <input name="txtfirstname" type="text" value="{$row['firstname']}" /><br/>
    Surname :

@@ -13,7 +13,7 @@
    }
 
    if (isset($_SESSION['id'])) {
-      $data['content'] = "<p>Welcome to your dashboard.";
+      $data['content'] = "<h2 id='welcome'>&emsp;Welcome to your dashboard.</h2>";
       echo template("templates/partials/nav.php");
       echo template("templates/default.php", $data);
    } else {
